@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>企業情報 | 廣西金秀松源林產有限公司</title>
+
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="javascripts/data.js"></script>
+    <script src="javascripts/all.js"></script>
+    <script src="javascripts/ctrl.js"></script>
+
+  </head>
+
+  <body ng-app="myApp" ng-controller="myCtrl as m">
+    <div class="wrap" ng-class="{'active':m.isActive}">
+      <div class="deco-line"></div>
+      <div class="container">
+      <nav class="header row">
+  <div class="col-md-2 col-sm-2 col-xs-1">
+    <h1 class="header-band">
+      <img src="../images/purelogo.gif" alt="">
+    </h1>
+  </div>
+  <div class="col-md-7 col-md-offset-3 col-sm-offset-1 col-sm-9 hidden-xs text-right">
+    <ul class="header-menu">
+      <li class="menu-item "><a href="index.html">網站首頁</a></li>
+      <li class="menu-item active"><a href="about.html">企業情報</a></li>
+      <li class="menu-item "><a href="product.html">產品介紹</a></li>
+      <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+    </ul>  
+  </div>
+  <div class="mob-menu visible-xs-block" ng-click="m.menuActive()">
+  </div>
+  
+</nav>
+        <div class="banner">
+          <img src="images/about_banner.png" height="223" width="1000" alt="">
+        </div>
+      
+	<div class="deco-line"></div>
+	<h2 class="page-title">
+		企業情報 
+	</h2>
+	<div class="row about_content content-gap">
+	<div>廣西金秀松源林產有限公司創辦於 2004 年，現位於廣西來賓市金秀瑤族自治縣桐木工業集中區，佔地 123 畝，註冊資金 3280 萬元。現有員工 105 人，是由上市公司廣東天龍油墨集團股份公司控股、雲南森源化工有限公司參股的有限責任公司。
+	<br>
+	公司長期與科研院所、業內企業合作，致力於松香、松節油等林產品及歧化松香、歧化松香鉀，產品歷年經國家檢測均為合格，深加工技術獲得
+		國家級專利。公司先後被評為「納稅大戶」、「來賓市納稅信用A級企業」、「來賓市農業產業化重點龍頭企業」、「自治區信息化應用示範企業」， 2013 年 5 月，企業通過國際質量管理體系 ISO9001:2008 認證。<br>
+	公司現有年產 25000 噸脂松香生產線一條；4000 噸松節油生產線一條；20000 噸歧化松香生產線一條； 8000 噸歧化松香鉀皂生產線一條。
+	主要產品：脂松香、松節油、歧化松香、歧化松香鉀
+		皂。廣西松源林產有限公司的產品國內外客戶推崇，產品除銷往國內各省及台灣、香港地區外，還出口到日本、韓國、英國、智利、南非及其它東南亞、歐美等國際市場。 <br>
+	公司始終堅持“追求卓越品質，提供優質服務，為客戶創造更高價值”的價值觀以及“質量第一，誠信服務，顧客滿意，持續改進”的質量方針，旨在為客戶提供更優質的產品和服務。
+	</div>
+	</div>
+	<h2 class="page-title">
+		企業榮譽 
+	</h2>
+	<div class="row about-slide maB2x content-gap">
+		<div class="col-md-4 col-sm-5 col-xs-12 slide-img">
+			<img ng-src="images/about/{{m.szImg}}" width="100%" alt="">
+		</div>
+		<div class="col-md-8 col-sm-7 col-xs-12  slide-content">
+			<div class="deco-line"></div>
+			<div class="slide-content-items">
+				<div class="btn-style item" ng-repeat="sz in m.szData" ng-click="m.showSZ($index)">{{sz.title}}</div>
+			</div>
+			<div class="deco-line rotate-invert"></div>
+		</div>
+	</div>
+      </div>
+      <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<ul class="link-group">
+					<li><a href="index.html">網站首頁</a></li>
+					<li><a href="about.html">企業訊息</a></li>
+					<li><a href="product.html">產品介紹</a></li>
+					<li><a href="contact.html">客戶服務</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-1 col-xs-1"></div>
+			<div class="shop col-md-6 col-sm-11 col-sm-10 col-xs-11">
+				<h3 class="shop-img hidden-xs"><img alt="广西金秀松源林产有限公司" src="../images/purelogo.gif" alt=""></h3>
+				<p class="shop-info">
+					版权所有 广西金秀松源林产有限公司 <br>
+					广西金秀县桐木镇象桐路（工业集中区）<br>
+					桂ICP备13007186号-1 <br>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+    <div class="mob-menu-list" ng-class="{'active':m.isActive}">
+        <ul class="header-menu" ng-class="{'active':m.isActive}">
+          <li class="menu-item" ng-click="m.menuActive()"><a href="###"><i class="glyphicon glyphicon-chevron-left"></i>&nbsp;&nbsp;返回</a></li>
+          <li class="menu-item "><a href="index.html">網站首頁</a></li>
+          <li class="menu-item active"><a href="about.html">企業情報</a></li>
+          <li class="menu-item "><a href="product.html">產品介紹</a></li>
+          <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+        </ul>
+      </div>
+  </body>
+</html>
