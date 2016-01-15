@@ -124,7 +124,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* line 421, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/bootstrap/bootstrap/_normalize.scss */
 td, th { padding: 0; }
 
-@font-face { font-family: 'Glyphicons Halflings'; src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url("fonts/bootstrap/glyphicons-halflings-regular.eot"); src: url("fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 /* line 24, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/bootstrap/bootstrap/_glyphicons.scss */
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
