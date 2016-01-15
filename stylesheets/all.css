@@ -1999,12 +1999,12 @@ footer { background: #819429; border-bottom: #3C4512 10px solid; padding: 38px 0
   /* line 225, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
   body { overflow: hidden; }
   /* line 227, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
-  .mob-menu-list { width: 60vw; height: 100%; height: 100vh; position: fixed; top: 0; right: 0vw; overflow: hidden; background-color: #91A62A; opacity: 0; webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
-  /* line 238, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
+  .mob-menu-list { width: 60vw; height: 100%; height: 100vh; position: fixed; top: 0; right: 0vw; overflow: hidden; background-color: #91A62A; opacity: 0; display: block; webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
+  /* line 239, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
   .mob-menu-list.active { opacity: 1; }
-  /* line 242, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
+  /* line 243, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
   .wrap { position: relative; left: 0vw; z-index: 2; webkit-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; -webkit-transition-timing-function: linear; transition-timing-function: linear; }
-  /* line 249, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
+  /* line 250, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/base/_default.sass */
   .wrap.active { left: -60vw; } }
 /* No files to import found in modules/* */
 /* line 1, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_about.sass */
