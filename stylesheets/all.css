@@ -2080,7 +2080,7 @@ footer { background: #819429; border-bottom: #3C4512 10px solid; padding: 38px 0
 /* line 65, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
 .subbnr .subbnr-img { display: inline-block; width: 696px; overflow: hidden; }
 @media screen and (max-width: 768px) { /* line 65, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
-  .subbnr .subbnr-img { height: 30vh; width: 100%; min-height: 250px; }
+  .subbnr .subbnr-img { height: 30vh; width: 100%; min-height: 180px; }
   /* line 73, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
   .subbnr .subbnr-img img { width: 100%; } }
 /* line 76, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
@@ -2165,6 +2165,8 @@ footer { background: #819429; border-bottom: #3C4512 10px solid; padding: 38px 0
 .field-set .field-group .field-input:focus { outline: none; }
 /* line 228, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
 .field-set .contact-btn { padding: 10px 92px; font-size: 1.25em; background-color: #434B1A; border: none; }
+@media screen and (max-width: 480px) { /* line 228, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_index.sass */
+  .field-set .contact-btn { width: 100%; } }
 
 /* line 2, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_product.sass */
 .type-list { list-style: none; margin-top: 34px; text-align: right; }
