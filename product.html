@@ -10,7 +10,8 @@
     <title>產品介紹 | 廣西金秀松源林產有限公司</title>
 
     <link href="stylesheets/all.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
     <script src="javascripts/data.js"></script>
     <script src="javascripts/all.js"></script>
     <script src="javascripts/ctrl.js"></script>
@@ -65,12 +66,13 @@
 		<div class="product-info">
 			<h4>{{m.pData.Name}}</h4>
 			<div class="row">
-				<div class="col-md-4">
-					<p>
-						{{m.pData.Discription}}
-					</p>
+				<div ng-class="m.pData.ProContent()">
+					<div ng-repeat="dct in m.pData.Discription">
+						<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+						<p ng-bind-html="dct.content"></p>
+					</div>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
 					<p ng-repeat="imgs in m.pData.OtherImg">
 						<img ng-src="images/product/{{imgs}}" width="100%" alt="">
 					</p>
