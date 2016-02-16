@@ -2196,6 +2196,16 @@ footer { background: #819429; border-bottom: #3C4512 10px solid; padding: 38px 0
 .product-item:hover .product-title { background-color: rgba(145, 166, 42, 0.8); }
 
 /* line 50, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_product.sass */
-.product-info { display: none; margin-bottom: 19px; padding: 25px; background-color: rgba(145, 166, 42, 0.8); color: white; }
+.product-info { margin-bottom: 19px; padding: 25px; background-color: rgba(145, 166, 42, 0.8); color: white; }
 /* line 56, /Users/ilandy/Documents/infbeyondfile/LionWeb/ForestMiddleMan/source/stylesheets/pages/_product.sass */
 .product-info p { text-align: justify; }
+
+.product-table{
+	border: 1px solid #fff;
+	width: 100%;
+}
+.product-table td {
+	border: 1px solid #fff;
+	text-align: center;
+}
+.product-table .text-left { text-align: left !important;}

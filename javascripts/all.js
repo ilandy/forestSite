@@ -1,4 +1,4 @@
 (function(){
 	angular
-		.module('myApp',[]);	
+		.module('myApp',['ngSanitize']);	
 })();
