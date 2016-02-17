@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>產品介紹 | 廣西金秀松源林產有限公司</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="javascripts/data.js"></script>
+    <script src="javascripts/all.js"></script>
+    <script src="javascripts/ctrl.js"></script>
+
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl as m">
+    <div class="wrap " ng-class="{'active':m.isActive}">
+      <div class="deco-line "></div>
+      <div class="container">
+      <nav class="header row ">
+  <div class="col-md-2 col-sm-2 col-xs-1">
+    <h1 class="header-band">
+      <img src="images/purelogo.gif" alt="">
+    </h1>
+  </div>
+  <div class="col-md-7 col-md-offset-3 col-sm-offset-1 col-sm-9 hidden-xs text-right">
+    <ul class="header-menu">
+      <li class="menu-item "><a href="index.html">網站首頁</a></li>
+      <li class="menu-item "><a href="about.html">企業情報</a></li>
+      <li class="menu-item active"><a href="product.html">產品介紹</a></li>
+      <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+    </ul>  
+  </div>
+  <div class="mob-menu visible-xs-block " ng-click="m.menuActive()">
+  </div>
+</nav>
+        <div class="banner">
+          <img src="images/product_banner.png" height="223" width="1000" alt="">
+        </div>
+      <div class="deco-line"></div>
+<div class="row">
+	<h2 class="page-title pull-left col-sm-3 col-xs-12">
+		產品介紹
+	</h2>
+	<ul class="type-list pull-right col-sm-9 col-xs-12">
+		<li class="type-item" ng-class="{'active':m.pType == 0}" ng-click="m.pType=0">不分類</li>
+		<li class="type-item" ng-class="{'active':m.pType == 1}" ng-click="m.pType=1">松香类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 2}" ng-click="m.pType=2">歧化松香类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 3}" ng-click="m.pType=3">松香树脂类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 4}" ng-click="m.pType=4">松节油类</li>
+	</ul>
+</div>
+<div class="row maB2x product-content">
+	<div class="col-sm-4 col-xs-6" ng-repeat="items in m.item" ng-show="items.ProType == m.pType || m.pType == 0" ng-click="m.seeMore($index)">
+		<div class="product-item">
+			<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+			<div class="product-title">{{ items.Name }} </div>
+		</div>
+	</div>
+	
+	<div class="col-xs-12">
+		<div class="product-info">
+			<h4>{{m.pData.Name}}</h4>
+			<div class="row">
+				<div class="col-md-4">
+					<p>
+						{{m.pData.Discription}}
+					</p>
+				</div>
+				<div class="col-md-8">
+					<p ng-repeat="imgs in m.pData.OtherImg">
+						<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      </div>
+      <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<ul class="link-group">
+					<li><a href="index.html">網站首頁</a></li>
+					<li><a href="about.html">企業訊息</a></li>
+					<li><a href="product.html">產品介紹</a></li>
+					<li><a href="contact.html">客戶服務</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-1 col-xs-1"></div>
+			<div class="shop col-md-6 col-sm-11 col-sm-10 col-xs-11">
+				<h3 class="shop-img hidden-xs"><img alt="广西金秀松源林产有限公司" src="images/purelogo.gif" alt=""></h3>
+				<p class="shop-info">
+					版权所有 广西金秀松源林产有限公司 <br>
+					广西金秀县桐木镇象桐路（工业集中区）<br>
+					桂ICP备13007186号-1 <br>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+    <div class="mob-menu-list" ng-class="{'active':m.isActive}">
+        <ul class="header-menu" ng-class="{'active':m.isActive}">
+          <li class="menu-item" ng-click="m.menuActive()"><a href="###"><i class="glyphicon glyphicon-chevron-left"></i>&nbsp;&nbsp;返回</a></li>
+          <li class="menu-item "><a href="index.html">網站首頁</a></li>
+          <li class="menu-item "><a href="about.html">企業情報</a></li>
+          <li class="menu-item active"><a href="product.html">產品介紹</a></li>
+          <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+        </ul>
+      </div>
+  </body>
+</html>

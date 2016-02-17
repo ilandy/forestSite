@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>廣西金秀松源林產有限公司</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="javascripts/data.js"></script>
+    <script src="javascripts/all.js"></script>
+    <script src="javascripts/ctrl.js"></script>
+
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl as m">
+    <div class="wrap index" ng-class="{'active':m.isActive}">
+      <div class="deco-line "></div>
+      <div class="container">
+      <nav class="header row index">
+  <div class="col-md-2 col-sm-2 col-xs-1">
+    <h1 class="header-band">
+      <img src="images/purelogo.gif" alt="">
+    </h1>
+  </div>
+  <div class="col-md-7 col-md-offset-3 col-sm-offset-1 col-sm-9 hidden-xs text-right">
+    <ul class="header-menu">
+      <li class="menu-item active"><a href="index.html">網站首頁</a></li>
+      <li class="menu-item "><a href="about.html">企業情報</a></li>
+      <li class="menu-item "><a href="product.html">產品介紹</a></li>
+      <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+    </ul>  
+  </div>
+  <div class="mob-menu visible-xs-block index" ng-click="m.menuActive()">
+  </div>
+</nav>
+      
+      </div>
+        <div class="index-header container">
+	<div class="slogen">
+		<h2 class="slogen-top">品質穩定  產能豐富</h2>
+		<h2 class="slogen-bottom">
+			Quality And Stability
+		</h2>	
+	</div>
+</div>
+<h3 class="index-title hidden-xs hidden-sm">
+	<span class="index-title-content">
+		品質穩定  產能豐富
+		<span class="deco-line"></span>
+	</span>
+</h3>
+<div class="subbnr">
+	<div class="subbnr-img hidden-xs hidden-sm"><img src="images/index/index_subbanner_00.png" alt=""></div>
+	<div class="subbnr-content">
+		<div class="subbnr-content-wrap">
+			<div class="sbbnr-content-top">Own Forestry</div>
+			<div class="sbbnr-content-bottom">因為擁有自有林場</div>
+		</div>
+	</div>
+	<div class="subbnr-img hidden-lg hidden-md"><img src="images/index/index_subbanner_00.png" alt=""></div>
+</div>
+<div class="subbnr">
+	
+	<div class="subbnr-content">
+		<div class="subbnr-content-wrap">
+			<div class="sbbnr-content-top">Collaborative<br>Research</div>
+			<div class="sbbnr-content-bottom">長期合與科研所合作</div>
+		</div>
+	</div>
+	<div class="subbnr-img"><img src="images/index/index_subbanner_01.png" alt=""></div>
+</div>
+<div class="subbnr">
+	<div class="subbnr-img hidden-xs hidden-sm"><img src="images/index/index_subbanner_02.png" alt=""></div>
+	<div class="subbnr-content">
+		<div class="subbnr-content-wrap">
+			<div class="sbbnr-content-top">Own Factory</div>
+			<div class="sbbnr-content-bottom">自有生產工廠</div>
+		</div>
+	</div>
+	<div class="subbnr-img hidden-lg hidden-md"><img src="images/index/index_subbanner_02.png" alt=""></div>
+</div>
+<div class="custom">
+	<h3 class="index-title">
+		<span class="index-title-content">
+			我們的三大客戶
+			<span class="deco-line"></span>
+		</span>
+	</h3>
+	<ul class="customer">
+		<li> <img src="images/index/customer_CHIMEI.png" alt=""> </li>
+		<li> <img src="images/index/customer_TSRC.png" alt=""> </li>
+		<li> <img src="images/index/customer_TS.png" alt=""></li>
+	</ul>
+</div>
+<div class="deco-line"></div>
+      <footer>
+	<div class="container">
+			<div class="row contact">
+				<div class="contact-title">
+					<h3>
+						Contact<span class="hidden-xs hidden-sm"><br></span> Me
+					</h3>
+					<p>聯絡我們</p>
+				</div>
+				<div class="contact-form">
+					<fieldset class="field-set">
+						<div class="field-group">
+							<label class="field-label" for="name">
+								您的大名
+							</label>
+							<input class="field-input" type="text" id="name" placeholder="Ilandy chiu">
+						</div>
+						<div class="field-group">
+							<label class="field-label" for="email">
+								電子郵件
+							</label>
+							<input class="field-input" type="email" id="email" placeholder="請輸入電子郵件" >
+						</div>
+						<div class="field-group">
+							<label class="field-label" for="qa">
+								詢問內容
+							</label>
+							<textarea class="field-input" id="qa" rows="6" placeholder="您的問題內容" ></textarea>
+						</div>
+						<div class="text-right">
+						<button class="contact-btn"> 送出訊息 </button></div>
+					</fieldset>
+				</div>
+			</div>
+
+		<div class="row">
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<ul class="link-group">
+					<li><a href="index.html">網站首頁</a></li>
+					<li><a href="about.html">企業訊息</a></li>
+					<li><a href="product.html">產品介紹</a></li>
+					<li><a href="contact.html">客戶服務</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-1 col-xs-1"></div>
+			<div class="shop col-md-6 col-sm-11 col-sm-10 col-xs-11">
+				<h3 class="shop-img hidden-xs"><img alt="广西金秀松源林产有限公司" src="images/purelogo.gif" alt=""></h3>
+				<p class="shop-info">
+					版权所有 广西金秀松源林产有限公司 <br>
+					广西金秀县桐木镇象桐路（工业集中区）<br>
+					桂ICP备13007186号-1 <br>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+    <div class="mob-menu-list" ng-class="{'active':m.isActive}">
+        <ul class="header-menu" ng-class="{'active':m.isActive}">
+          <li class="menu-item" ng-click="m.menuActive()"><a href="###"><i class="glyphicon glyphicon-chevron-left"></i>&nbsp;&nbsp;返回</a></li>
+          <li class="menu-item active"><a href="index.html">網站首頁</a></li>
+          <li class="menu-item "><a href="about.html">企業情報</a></li>
+          <li class="menu-item "><a href="product.html">產品介紹</a></li>
+          <li class="menu-item "><a href="contact.html">客戶服務</a></li>
+        </ul>
+      </div>
+  </body>
+</html>
