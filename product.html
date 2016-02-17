@@ -10,8 +10,9 @@
     <title>產品介紹 | 廣西金秀松源林產有限公司</title>
 
     <link href="stylesheets/all.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
     <script src="javascripts/data.js"></script>
     <script src="javascripts/all.js"></script>
     <script src="javascripts/ctrl.js"></script>
@@ -47,38 +48,164 @@
 		產品介紹
 	</h2>
 	<ul class="type-list pull-right col-sm-9 col-xs-12">
-		<li class="type-item" ng-class="{'active':m.pType == 0}" ng-click="m.pType=0">不分類</li>
-		<li class="type-item" ng-class="{'active':m.pType == 1}" ng-click="m.pType=1">松香类</li>
-		<li class="type-item" ng-class="{'active':m.pType == 2}" ng-click="m.pType=2">歧化松香类</li>
-		<li class="type-item" ng-class="{'active':m.pType == 3}" ng-click="m.pType=3">松香树脂类</li>
-		<li class="type-item" ng-class="{'active':m.pType == 4}" ng-click="m.pType=4">松节油类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 0}" ng-click="m.pType=0;m.pData.ProConVisble = false">不分類</li>
+		<li class="type-item" ng-class="{'active':m.pType == 1}" ng-click="m.pType=1;m.pData.ProConVisble = false">松香类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 2}" ng-click="m.pType=2;m.pData.ProConVisble = false">歧化松香类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 3}" ng-click="m.pType=3;m.pData.ProConVisble = false">松香树脂类</li>
+		<li class="type-item" ng-class="{'active':m.pType == 4}" ng-click="m.pType=4;m.pData.ProConVisble = false">松节油类</li>
 	</ul>
 </div>
 <div class="row maB2x product-content">
-	<div class="col-sm-4 col-xs-6" ng-repeat="items in m.item" ng-show="items.ProType == m.pType || m.pType == 0" ng-click="m.seeMore($index)">
-		<div class="product-item">
-			<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
-			<div class="product-title">{{ items.Name }} </div>
-		</div>
-	</div>
-	
-	<div class="col-xs-12">
-		<div class="product-info">
-			<h4>{{m.pData.Name}}</h4>
-			<div class="row">
-				<div ng-class="m.pData.ProContent()">
-					<div ng-repeat="dct in m.pData.Discription">
-						<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
-						<p ng-bind-html="dct.content"></p>
-					</div>
-				</div>
-				<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
-					<p ng-repeat="imgs in m.pData.OtherImg">
-						<img ng-src="images/product/{{imgs}}" width="100%" alt="">
-					</p>
+	<div ng-if="m.pType==0">
+		<span ng-repeat="items in m.item">
+			<div class="col-sm-4 col-xs-6 product-item" ng-click="m.seeMore($index)">
+				<div class="product-item">
+					<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+					<div class="product-title">{{ items.Name }} </div>
 				</div>
 			</div>
-		</div>
+			<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
+			ng-class="{'show': m.ProConVisble(m.pData.ProConVisble,$index)}">
+				<div class="product-info">
+					<div class="product-close" ng-click="m.pData.ProConVisble = !m.pData.ProConVisble"></div>
+					<h3>{{m.pData.Name}}</h3>
+					<div class="row">
+						<div ng-class="m.pData.ProContent()">
+							<div ng-repeat="dct in m.pData.Discription">
+								<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+								<p ng-bind-html="dct.content"></p>
+							</div>
+						</div>
+						<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
+							<p ng-repeat="imgs in m.pData.OtherImg">
+								<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</div>
+	<div ng-if="m.pType==1">
+		<span ng-repeat="items in m.item1">
+			<div class="col-sm-4 col-xs-6 product-item" ng-click="m.seeMore($index)">
+				<div class="product-item">
+					<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+					<div class="product-title">{{ items.Name }} </div>
+				</div>
+			</div>
+			<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
+			ng-class="{'show': m.ProConVisble(m.pData.ProConVisble,$index)}">
+				<div class="product-info">
+					<div class="product-close" ng-click="m.pData.ProConVisble = !m.pData.ProConVisble"></div>
+					<h3>{{m.pData.Name}}</h3>
+					<div class="row">
+						<div ng-class="m.pData.ProContent()">
+							<div ng-repeat="dct in m.pData.Discription">
+								<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+								<p ng-bind-html="dct.content"></p>
+							</div>
+						</div>
+						<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
+							<p ng-repeat="imgs in m.pData.OtherImg">
+								<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</div>
+
+	<div ng-if="m.pType==2">
+		<span ng-repeat="items in m.item2">
+			<div class="col-sm-4 col-xs-6 product-item" ng-click="m.seeMore($index)">
+				<div class="product-item">
+					<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+					<div class="product-title">{{ items.Name }} </div>
+				</div>
+			</div>
+			<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
+			ng-class="{'show': m.ProConVisble(m.pData.ProConVisble,$index)}">
+				<div class="product-info">
+					<div class="product-close" ng-click="m.pData.ProConVisble = !m.pData.ProConVisble"></div>
+					<h3>{{m.pData.Name}}</h3>
+					<div class="row">
+						<div ng-class="m.pData.ProContent()">
+							<div ng-repeat="dct in m.pData.Discription">
+								<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+								<p ng-bind-html="dct.content"></p>
+							</div>
+						</div>
+						<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
+							<p ng-repeat="imgs in m.pData.OtherImg">
+								<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</div>
+	<div ng-if="m.pType==3">
+		<span ng-repeat="items in m.item3">
+			<div class="col-sm-4 col-xs-6 product-item" ng-click="m.seeMore($index)">
+				<div class="product-item">
+					<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+					<div class="product-title">{{ items.Name }} </div>
+				</div>
+			</div>
+			<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
+			ng-class="{'show': m.ProConVisble(m.pData.ProConVisble,$index)}">
+				<div class="product-info">
+					<div class="product-close" ng-click="m.pData.ProConVisble = !m.pData.ProConVisble"></div>
+					<h3>{{m.pData.Name}}</h3>
+					<div class="row">
+						<div ng-class="m.pData.ProContent()">
+							<div ng-repeat="dct in m.pData.Discription">
+								<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+								<p ng-bind-html="dct.content"></p>
+							</div>
+						</div>
+						<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
+							<p ng-repeat="imgs in m.pData.OtherImg">
+								<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</div>
+	<div ng-if="m.pType==4">
+		<span ng-repeat="items in m.item4">
+			<div class="col-sm-4 col-xs-6 product-item" ng-click="m.seeMore($index)">
+				<div class="product-item">
+					<img class="product-img" ng-src="images/product/{{items.Pic}}" width="100%">
+					<div class="product-title">{{ items.Name }} </div>
+				</div>
+			</div>
+			<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
+			ng-class="{'show': m.ProConVisble(m.pData.ProConVisble,$index)}">
+				<div class="product-info">
+					<div class="product-close" ng-click="m.pData.ProConVisble = !m.pData.ProConVisble"></div>
+					<h3>{{m.pData.Name}}</h3>
+					<div class="row">
+						<div ng-class="m.pData.ProContent()">
+							<div ng-repeat="dct in m.pData.Discription">
+								<h4 ng-if="dct.title!=''">{{dct.title}}</h4>
+								<p ng-bind-html="dct.content"></p>
+							</div>
+						</div>
+						<div class="col-md-7" ng-if="m.pData.OtherImg!=0">
+							<p ng-repeat="imgs in m.pData.OtherImg">
+								<img ng-src="images/product/{{imgs}}" width="100%" alt="">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
 	</div>
 </div>
       </div>
