@@ -6,8 +6,8 @@
 				<div class="product-title">{{ items.Name }} </div>
 			</div>
 		</div>
-		<div class="product-wrap col-sm-12" ng-if="$index%3 == 2 || $last" 
-		ng-class="{'show': CheckVisble(pData.IsVisble,$index)}">
+		<div class="product-wrap col-sm-12 " ng-if="$index%3 == 2 || $last" 
+		ng-class="{'product-show': CheckVisble(pData.IsVisble,$index)}">
 			<div class="product-info">
 				<div class="product-close" ng-click="pData.IsVisble = !pData.IsVisble"></div>
 				<h3>{{pData.Name}}</h3>

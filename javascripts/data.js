@@ -21,45 +21,53 @@ proType1 = [
 	    "Pic": "20140822111527217-1.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "暫時沒有該項產品文案資料。"
 	    }],
-	    "OtherImg": ["123.jpg", "124.jpg"]
+	    "OtherImg": []
 	}, {
 	    "Name": "脂松香",
 	    "ProType": 1,
 	    "Pic": "20140822101309800.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "松香以松树松脂为原料，通过不同的加工方式得到的非挥发性天然树脂。松香是重要的化工原料，广泛应用于肥皂、造纸、油漆、橡胶等行业。"
 	    }],
-	    "OtherImg": ["123.jpg", "124.jpg"]
+	    "OtherImg": ["pdt001.jpg"]
 	}, {
 	    "Name": "顺酐改性松香",
 	    "ProType": 1,
 	    "Pic": "20140822101603361.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "暫時沒有該項產品文案資料。"
 	    }],
-	    "OtherImg": ["123.jpg", "124.jpg"]
+	    "OtherImg": []
 	}, {
 	    "Name": "富马改性松香",
 	    "ProType": 1,
 	    "Pic": "20140822101749914.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "暫時沒有該項產品文案資料。"
 	    }],
-	    "OtherImg": ["123.jpg", "124.jpg"]
+	    "OtherImg": []
 	}, {
 	    "Name": "造纸施胶剂专用改性松香",
 	    "ProType": 1,
 	    "Pic": "20140822160913271.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "马来松香又称马来酸酐松香，是松香与马来酸酐（顺酐）进行加成反应所得的产物，实际上是50%以上马来海松酸酐的加合物和约35%未起反应的树脂酸以及10%中性物质的混合物。"
+	    },
+	    {
+	        "title": "物理化学性质",
+	        "content": "一般性质与用途： 马来松香具有耐光、耐氧化和软化点高等特点，而且加合物分子结构中有个羟基，可与许多化合物发生反应而生成一系列衍生物，因而其用途十分广泛。贮存运输时要注意防火防热，不可与自燃物、强氧化剂、强酸共储混运，按易燃物品规定处理。"
+	    },
+	    {
+	        "title": "用途",
+	        "content": "主要用作纸张施胶剂，其他在涂料、油墨、建筑、胶粘剂、合成橡胶、合成树脂等方面都得到了广泛的应用。"
 	    }],
-	    "OtherImg": ["123.jpg", "124.jpg"]
+	    "OtherImg": ["pdt002.jpg", "pdt003.jpg"]
 }];
 
 proType2 = [
@@ -100,9 +108,9 @@ proType2 = [
 	    "Pic": "20140822102029183.jpg",
 	    "Discription": [{
 	        "title": "",
-	        "content": "暫無資料"
+	        "content": "暫時沒有該項產品文案資料。"
 	    }],
-	    "OtherImg": ["20140826085608875.jpg", "20140826085608876.jpg"]
+	    "OtherImg": ["pdt004.jpg"]
 	}];
 
 proType3 = [
@@ -112,25 +120,25 @@ proType3 = [
     "Pic": "20140822104039699.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "暫時沒有該項產品文案資料。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": []
 }, {
     "Name": "马林酸树脂",
     "ProType": 3,
     "Pic": "20140822103209363.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "马林酸树脂是由松香改性后以甘油酯化而制成的不规则淡黄色透明固体。本品具有软化点高、不易泛黄、热稳定性好及附着力强等优点，可溶解于酯类及松节油等溶剂，不溶于醇类溶剂，部分溶解于石油类溶剂，与植物油混溶性较好。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": ["pdt005.jpg"]
 }, {
     "Name": "松香季戊四醇脂",
     "ProType": 3,
     "Pic": "20140822103840428.jpg",
     "Discription": [{
-        "title": "",
-        "content": "暫無資料"
+        "title": "技术指标",
+        "content": "外观浅黄色片状固体 <br>酸值mgKOH/g ≤20<br>色号≤(Gardner)4<br>软化点(环球法)℃≥95<br>溶解度 清"
     }],
     "OtherImg": ["123.jpg", "124.jpg"]
 }, {
@@ -139,9 +147,9 @@ proType3 = [
     "Pic": "20140822103349393.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "暫時沒有該項產品文案資料。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": ["pdt006.jpg"]
 }];
 proType4 = [{
     "Name": "重油",
@@ -149,25 +157,25 @@ proType4 = [{
     "Pic": "20140822160258818.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "暫時沒有該項產品文案資料。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": ["pdt007.jpg"]
 }, {
     "Name": "松节油－湿地松",
     "ProType": 4,
     "Pic": "20140822160522473.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "脂松节油是指利用蒸馏法从松脂中提取出的松节油，脂松节油采用的松脂为采脂所得。由于脂松节油的原料是可以通过对树木进行多次采割获取，有利于充分利用森林资源，因此脂松节油占目前松节油总产量的很大比例。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": ["pdt008.jpg"]
 }, {
     "Name": "松节油－马尾松",
     "ProType": 4,
     "Pic": "20140822160706914.jpg",
     "Discription": [{
         "title": "",
-        "content": "暫無資料"
+        "content": "脂松节油是指利用蒸馏法从松脂中提取出的松节油，脂松节油采用的松脂为采脂所得。由于脂松节油的原料是可以通过对树木进行多次采割获取，有利于充分利用森林资源，因此脂松节油占目前松节油总产量的很大比例。"
     }],
-    "OtherImg": ["123.jpg", "124.jpg"]
+    "OtherImg": ["pdt009.jpg"]
 }];
