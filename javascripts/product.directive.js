@@ -23,9 +23,9 @@
 			 				"GetContentIndex": Math.floor(idx / 3),
 						 	"GetContentClass": function(){
 						 		if($scope.array[idx].OtherImg.length !== 0){
-						 			return 'col-md-5';
+						 			return 'col-sm-5';
 						 		}else{
-						 			return 'col-md-12 two-row';
+						 			return 'col-sm-12 three-row';
 						 		}
 				 			}
 						};

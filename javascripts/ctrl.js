@@ -14,7 +14,15 @@
 		vm.item3 = proType3;
 		vm.item4 = proType4;
 		vm.pType = 0;
-		vm.pData = {};
+		vm.pData = {
+			"Name" : "",
+			"Pic": "",
+	 		"Discription": {},
+	 		"OtherImg": [],
+	 		"IsVisble": true,
+			"GetContentIndex": 0,
+		 	"GetContentClass": "col-sm-5"
+		};
 		vm.szData = szInfo;
 		vm.szImg = vm.szData[0].Pic;
 
