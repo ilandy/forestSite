@@ -9,7 +9,7 @@
 		var vm = this; 
 		vm.isActive = false;
 		vm.data = {};
-		$http.get('../javascripts/data.json').success(function(data) {
+		$http.get('javascripts/data.json').success(function(data) {
             vm.data = data;
             //console.log(vm.data);
             vm.item = data.proType1.concat(data.proType2).concat(data.proType3).concat(data.proType4);
