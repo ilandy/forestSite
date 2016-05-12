@@ -25,7 +25,7 @@
 						 		if($scope.array[idx].OtherImg.length !== 0){
 						 			return 'col-sm-5';
 						 		}else{
-						 			return 'col-sm-12 three-row';
+						 			return 'col-sm-12';
 						 		}
 				 			}
 						};
